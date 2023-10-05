@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Sharmili's Imports -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">yard</span> EcoFriend
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">campaign</span> Campaigns
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span> App Visitors
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">handshake</span> Partners
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Survey Data
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> User Feedbacks
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+          <h3>Campaign Success Rate: 95%</h3>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>CAMPAIGNS</h2>
+              <span class="material-icons-outlined">campaign</span>
+            </div>
+            <h3>Campaigns Today: 24</h3>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>APP VISITORS</h2>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h3>Today's Visitor Count: 209</h3>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>USER CONTENT</h2>
+              <span class="material-icons-outlined">person_pin_circle</span>
+            </div>
+            <h3>User Engagement Today: 75</h3>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>INACTIVE USERS</h2>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h3>Notify: 56 Idle Users</h3>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Past Events Results &nbsp;
+              <span class="fas fa-angle-double-right" style="font-size:28px"></span>
+            </h2>
+            <!-- <div id="bar-chart"></div> -->
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Schedule Campaigns &nbsp;
+              <span class="fa fa-calendar-alt" style="font-size:28px"></span>
+            </h2>
+            <!-- <div id="area-chart"></div> -->
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">New Campaign &nbsp;
+              <span class="fas fa-bullhorn" style="font-size:28px"></span>
+            </h2>
+            <!-- <div id="area-chart"></div> -->
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
